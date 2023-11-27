@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body
+{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 20px
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style-type:decimal-leading-zero;
+}
+h1{
+    text-align: center;
+    color: rgb(78, 138, 190);
+}
+
+#note{
+    color: red;
+}
+#from,#to{
+    font-family: 'Oswald', sans-serif;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#from:focus,#to:focus{
+    outline: none;
+}
+
+#from::placeholder,#to::placeholder{
+    color: black;
+    font-size: 16px;
+    /* padding-left: 10px; */
+}
+
+
+#submit{
+    height: 36px;
+    width: 100px;
+    outline: none;
+    border: 0px;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+}
+
+#submit:hover{
+    box-shadow: 1px 1px 3px white; 
+}
+
+#submit:active{
+    background-color: rgb(0, 0, 0); 
+    transform: translateY(5px);
+}
+
+#cards{
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,450px);
+}
+
+#card{
+    border: 2px solid white;
+    border-radius: 10px;
+    height:400px;
+    width: 400px;
+    background-color: rgb(78, 138, 190);
+    text-align: center;
+}
+
+#city{
+    font-size: 20px;
+}
+
+#from,#to{
+    font-size: 28px;
+}
+
+#departure,#arrival{
+    color:black;
+    text-decoration: underline;
+}
+
+#message{
+    display: none;
+}

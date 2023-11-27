@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GetFl8 </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <ul>
+            <div>
+                <li>AHMEDABAD (AMD)</li>
+                <li>BHUBANESHWAR (BBI)</li>
+                <li>BANGLORE (BLR)</li>
+                <li>MUMBAI (BOM)</li>
+                <li>KOLKATA (CCU)</li>
+                <li>DELHI (DEL)</li>
+                <li>HYDERABAD (HYD)</li>
+                <li>CHANDIGARH (IXC)</li>
+                <li>JHARSUGUDA (JRG)</li>
+                <li>CHENNAI (MAA)</li>
+                <li>PATNA (PAT)</li>
+                <li>RAIPUR (RPR)</li>
+                <li>VARANASI (VNS)</li>
+            </div>
+        </ul>
+        <h1><span id="note">NOTE :</span> PLEASE ENTER THE<span id="note"> CITY CODES</span> FOR THE DESIRED LOCATION
+        </h1>
+        <div class="flex">
+            <div id="input">
+                <input type="text" id="from" placeholder="FROM (eg: IXC)">
+                <input type="text" id="to" placeholder="TO (eg: MAA)">
+                <input type="submit" id="submit">
+            </div>
+        </div>
+        <div class="flex">
+            <div id="cards">
+                
+            </div>
+        </div>
+        <div id="message">
+            <p>NOT FOUND</p>
+        </div>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
